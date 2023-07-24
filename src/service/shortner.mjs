@@ -33,7 +33,7 @@ class Shortener_Service {
             }
 
             // creating a shortUrl using the baseUrl and whatever the user would want to use as  the shortener
-            const shortUrl = `${req.baseUrl}/${create_your_short_url}.com`
+            const shortUrl = `${req.baseUrl}/${create_your_short_url}`
 
             // creating and save the url
             const createUrl = await new Shortener_Model({
