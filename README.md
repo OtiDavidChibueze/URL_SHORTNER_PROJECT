@@ -5,7 +5,7 @@
 </p>
 
 ## Project Overview
-This project allow urses to shorten the long urls , allowing them to create their own shortened url 
+This project allow urses to shorten the long urls , allowing them to create their own shortened url of their choice
 
 ## Features
 - List the key features of your project here.
