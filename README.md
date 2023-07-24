@@ -1,19 +1,8 @@
 <h1 align="center">URL_SHORTNER_PROJECT</h1>
-<p align="center">
-  <img src="project-logo.png" alt="Project Logo" width="200">
-</p>
 
 <p align="center">
   <strong>A URL shortener project is a web application or service that converts long URLs into shorter and more manageable versions. The primary goal of a URL shortener is to create compact, user-friendly links that are easier to share, remember, and distribute.</strong>
 </p>
-
-<p align="center">
-  <a href="https://github.com/yourusername/yourproject/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/yourusername/yourproject?style=social"></a>
-  <a href="https://github.com/yourusername/yourproject/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/yourusername/yourproject?style=social"></a>
-  <a href="https://github.com/yourusername/yourproject/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/yourusername/yourproject"></a>
-  <a href="https://github.com/yourusername/yourproject/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/yourusername/yourproject"></a>
-</p>
-
 
 ## Project Overview
 This project allow urses to shorten the long urls
