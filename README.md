@@ -5,7 +5,7 @@
 </p>
 
 ## Project Overview
-This project allow urses to shorten the long urls
+This project allow urses to shorten the long urls , allowing them to create their own shortened url 
 
 ## Features
 - List the key features of your project here.
@@ -19,7 +19,21 @@ This project allow urses to shorten the long urls
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-- List any prerequisites that the user needs to have installed on their machine (e.g., Node.js, MongoDB).
+- List any prerequisites that the user needs to have installed on their machine
+- node.js
+- mongoDB
+- bcrypt
+- express
+- mongoose
+- cors
+- bodyParser
+- helmet
+- morgan
+- winston
+- jsonwebtoken
+- joi
+- dotenv
+
 
 ### Installation
 A step-by-step guide on how to set up and install the project.
