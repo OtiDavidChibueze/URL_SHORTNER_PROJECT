@@ -1,12 +1,10 @@
-# URL_SHORTNER_PROJECT
-A URL shortener project is a web application or service that converts long URLs into shorter and more manageable versions. The primary goal of a URL shortener is to create compact, user-friendly links that are easier to share, remember, and distribute.
-<h1 align="center">Project Name</h1>
+<h1 align="center">URL_SHORTNER_PROJECT</h1>
 <p align="center">
   <img src="project-logo.png" alt="Project Logo" width="200">
 </p>
 
 <p align="center">
-  <strong>A brief description of what this project does.</strong>
+  <strong>A URL shortener project is a web application or service that converts long URLs into shorter and more manageable versions. The primary goal of a URL shortener is to create compact, user-friendly links that are easier to share, remember, and distribute.</strong>
 </p>
 
 <p align="center">
@@ -16,22 +14,17 @@ A URL shortener project is a web application or service that converts long URLs 
   <a href="https://github.com/yourusername/yourproject/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/yourusername/yourproject"></a>
 </p>
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Project Overview
-A brief introduction to what your project is all about.
+This project allow urses to shorten the long urls
 
 ## Features
 - List the key features of your project here.
+- shorten  a long url
+- redirecting to the original url using the created short url
+- signing Up a user
+- logging out a user
+- logged in user can be able to get a list of all their shortened urls
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -41,3 +34,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 A step-by-step guide on how to set up and install the project.
+
+# Clone the repository
+git clone https://github.com/OtiDavidChibueze/URL_SHORTNER_PROJECT.git
+
+# Navigate to the project folder
+cd URL_SHORTNER_PROJECT
+
+# Install dependencies
+npm install
+
