@@ -13,7 +13,10 @@ This project allow urses to shorten the long urls , allowing them to create thei
 - redirecting to the original url using the created short url
 - signing Up a user
 - logging out a user
-- logged in user can be able to get a list of all their shortened urls
+- only logged in user can be able to get a list of all their shortened urls
+- update a customized shortened url
+- delete a customized shortened url
+- get a shortened url by id
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
