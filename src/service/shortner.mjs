@@ -133,8 +133,8 @@ class Shortener_Service {
                 };
             }
 
-            // If the userId matches, proceed with deleting the URL
-            const update = await Shortener_Model.findByIdAndUpdate(urlId, { long_url, create_your_short_url: update_your_short_url });
+            // If the userId matches, proceed with updating the URL
+            const update = await Shortener_Model.findByIdAndUpdate(urlId, { long_url, create_your_short_url: update_your_short_url }, { new: true });
             // save the changes
             await update.save();
 
