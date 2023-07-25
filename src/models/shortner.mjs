@@ -4,8 +4,8 @@ import mongoose from 'mongoose';
 // url shortener schema
 const Url_Shortener = mongoose.Schema({
     userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
+        type: String,
+        unique: true,
         required: true
     },
     long_url: {

@@ -27,7 +27,7 @@ class Shortener_Controller {
 
         } catch (error) {
             logger.error(`ShortenerController_shorten_url -> Error : ${error.message}`);
-            return ResponseHelper.errorResponse(res, 500, 'Oops something went wrong!')
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
         }
     }
 
@@ -58,7 +58,7 @@ class Shortener_Controller {
 
         } catch (err) {
             logger.error(`shortener_redirect_short_url -> Error: ${err.message}`);
-            return ResponseHelper.errorResponse(res, 500, 'Oops something went wrong during redirection!')
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
         }
     }
 
@@ -84,9 +84,86 @@ class Shortener_Controller {
 
         } catch (err) {
             logger.error(`shortenerController_get_all_shortened -> Error: ${err.message}`);
-            return ResponseHelper.errorResponse(res, 500, 'Oops something went wrong!')
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
         }
     }
+
+    /**
+     * @description - returns a json message
+     * @param {object} req - the object request 
+     * @param {object} res - the object response
+     * @returns - returns the json object
+     */
+    static async update_url(req, res) {
+        try {
+            const data = req.body;
+
+            const result = await Shortener_Service.update_url(data, req);
+
+            if (result.statusCode == 409) return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+
+            logger.info(`ShortenerController_update_url -> Info : updated successfully : ${JSON.stringify(result.data)}`)
+
+            return ResponseHelper.successResponse(res, result.statusCode, result.message, result.data)
+
+        } catch (error) {
+            logger.error(`ShortenerController_update_url -> Error : ${error.message}`);
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+        }
+    }
+
+    /**
+    * @description - returns a json message
+    * @param {object} req - the object request 
+    * @param {object} res - the object response
+    * @returns - returns the json object
+    */
+    static async delete_url(req, res) {
+        try {
+
+            const data = req.params;
+
+            const result = await Shortener_Service.delete_url(data, req);
+
+            if (result.statusCode == 409) return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+
+            logger.info(`ShortenerController_delete_url -> Info :  ${JSON.stringify(result.message)}`)
+
+            return ResponseHelper.successResponse(res, result.statusCode, result.message)
+
+        } catch (error) {
+            logger.error(`ShortenerController_delete_url -> Error : ${error.message}`);
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+        }
+    }
+
+    /**
+  * @description - returns a json message
+  * @param {object} req - the object request 
+  * @param {object} res - the object response
+  * @returns - returns the json object
+  */
+    static async get_by_id(req, res) {
+        try {
+
+            const data = req.params;
+
+            const result = await Shortener_Service.get_by_id(data, req);
+
+            if (result.statusCode == 409) return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+
+            logger.info(`ShortenerController_get_by_id -> Info : fetched the url :  ${JSON.stringify(result.data)}`)
+
+            return ResponseHelper.successResponse(res, result.statusCode, result.message, result.data)
+
+        } catch (error) {
+            logger.error(`ShortenerController_get_by_id -> Error : ${error.message}`);
+            return ResponseHelper.errorResponse(res, result.statusCode, result.message)
+        }
+    }
+
+
+
 
 
 

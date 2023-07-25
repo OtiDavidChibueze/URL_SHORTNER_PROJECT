@@ -7,5 +7,10 @@ const validUrl = joi.object({
     create_your_short_url: joi.string().required().trim(),
 })
 
-export { validUrl }
+const updateUrl = joi.object({
+    long_url: joi.string().required().trim(),
+    update_your_short_url: joi.string().required().trim(),
+})
+
+export { validUrl, updateUrl }
 
