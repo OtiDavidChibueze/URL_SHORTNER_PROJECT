@@ -51,8 +51,7 @@ class Shortener_Controller {
             // logging the longUrl to the console
             logger.info(`shortener_redirect_short_url -> Info: redirecting.... ${JSON.stringify(longUrl.long_url)}`);
 
-            // redirect to the original url
-            //! NB: the res.redirect() is used for redirection, so as a backed developer the redirection cant take place using postman, ill just display the original url using res.send()
+            //! NB: the res.redirect() is used for redirection
             // return res.redirect(longUrl.long_url)
             return res.send(longUrl.long_url)
 
